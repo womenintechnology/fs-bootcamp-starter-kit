@@ -1,0 +1,13 @@
+{% include 'Common/View/header.twig' %}
+{% block body %}
+	<body class="top-wave">
+	{% endblock %}
+	<section class="container">
+		<h1>{{ post.title }}</h1>
+		<p>{{ post.date }}</p>
+		<p>{{ post.author_forename }}
+			{{ post.author_surname }}</p>
+		<p>{{ post.content|raw }}</p>
+	</section>
+	{% include 'Common/View/footer.twig' %}
+</body>
